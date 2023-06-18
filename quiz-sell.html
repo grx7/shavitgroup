@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasha Shavit</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="icon" href="./img/logo-ico.svg">
+</head>
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__quiz quiz">
+                <div class="quiz__preview quiz-preview">
+                    <div class="quiz-preview__image quiz-preview__image_current">
+                        <img src="./img/quiz/sell1.webp" alt="">
+                    </div>
+                    <div class="quiz-preview__image">
+                        <img src="./img/quiz/buy1.webp" alt="">
+                    </div>
+                    <div class="quiz-preview__image">
+                        <img src="./img/quiz/buy4.webp" alt="">
+                    </div>
+                </div>
+                <div class="quiz__content">
+                    <div class="quiz__container">
+                        <div class="quiz__body">
+                            <div class="quiz-content">
+                                <div class="quiz-navigation">
+                                    <button class="quiz-navigation__button" data-quiz="question-prev">
+                                        <img src="./img/icon/arrow-top.svg" alt="">
+                                    </button>
+
+                                    <p class="quiz-navigation__steps">
+                                        <span>Step</span>
+                                        <span class="quiz-navigation__current-step">1</span>
+                                        <span>to</span>
+                                        <span class="quiz-navigation__total-steps">5</span>
+                                    </p>
+                                </div>
+                                <div class="quiz-content__body">
+                                    <div class="quiz-content__section quiz-content__section_address quiz-content__section_current">
+                                        <h2 class="quiz__question">
+                                            What is the address of your property?
+                                        </h2>
+
+                                        <form class="popup-form popup-form_sell">
+                                            <div class="popup-form__body">
+                                                <div class="popup-form__field">
+                                                    <label for="address" class="popup-form__label"><img src="./img/icon/address-icon.svg" alt=""></label>
+                                                    <input type="text" id="address" class="popup-form__input" placeholder="TestAddress">
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                        <button class="quiz__button-next button-dark" data-quiz="question-next">Next</button>
+                                    </div>
+                                    <div class="quiz-content__section">
+                                        <h2 class="quiz__question">
+                                            What type of property are you selling?
+                                        </h2>
+
+                                        <div class="quiz-cards">
+                                            <div class="quiz-cards__list">
+                                                <input type="radio" class="quiz-cards__input" value="Single-family" id="choose1" name="type-of-property">
+                                                <input type="radio" class="quiz-cards__input" value="Condo" id="choose2" name="type-of-property">
+                                                <input type="radio" class="quiz-cards__input" value="Townhouse" id="choose3" name="type-of-property">
+                                                <input type="radio" class="quiz-cards__input" value="Land / Lot" id="choose4" name="type-of-property">
+                                                <input type="radio" class="quiz-cards__input" value="Multi-Family" id="choose5" name="type-of-property">
+                                                <input type="radio" class="quiz-cards__input" value="Single-family" id="choose6" name="type-of-property">
+
+                                                <label for="choose1" class="quiz-cards__card" data-quiz="question-next">
+                                                    <span class="quiz-cards__preview">
+                                                        <img src="./img/type/img1.webp" alt="">
+                                                    </span>
+                                                    <span class="quiz-cards__title">Single-family</span>
+                                                </label>
+                                                <label for="choose2" class="quiz-cards__card" data-quiz="question-next">
+                                                    <span class="quiz-cards__preview">
+                                                        <img src="./img/type/img2.webp" alt="">
+                                                    </span>
+                                                    <span class="quiz-cards__title">Condo</span>
+                                                </label>
+                                                <label for="choose3" class="quiz-cards__card" data-quiz="question-next">
+                                                    <span class="quiz-cards__preview">
+                                                        <img src="./img/type/img3.webp" alt="">
+                                                    </span>
+                                                    <span class="quiz-cards__title">Townhouse</span>
+                                                </label>
+                                                <label for="choose4" class="quiz-cards__card" data-quiz="question-next">
+                                                    <span class="quiz-cards__preview">
+                                                        <img src="./img/type/img4.webp" alt="">
+                                                    </span>
+                                                    <span class="quiz-cards__title">Land / Lot</span>
+                                                </label>
+                                                <label for="choose5" class="quiz-cards__card" data-quiz="question-next">
+                                                    <span class="quiz-cards__preview">
+                                                        <img src="./img/type/img5.webp" alt="">
+                                                    </span>
+                                                    <span class="quiz-cards__title">Multi-Family</span>
+                                                </label>
+                                                <label for="choose6" class="quiz-cards__card" data-quiz="question-next">
+                                                    <span class="quiz-cards__preview">
+                                                        <img src="./img/type/img6.webp" alt="">
+                                                    </span>
+                                                    <span class="quiz-cards__title">Other</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="quiz-content__section">
+                                        <h2 class="quiz__question">
+                                            Fill out the form below and One of our top agents will get back to you
+                                        </h2>
+
+                                        <form class="popup-form">
+                                            <div class="popup-form__body">
+                                                <div class="popup-form__field popup-form__field_name">
+                                                    <label for="user-name" class="popup-form__label">Your name</label>
+                                                    <input type="text" id="user-name" class="popup-form__input" placeholder="First and last name">
+                                                </div>
+                                                <div class="popup-form__field">
+                                                    <label for="user-email" class="popup-form__label">Email</label>
+                                                    <input type="email" id="user-email" class="popup-form__input" placeholder="TestEmail@gmail.com">
+                                                </div>
+                                                <div class="popup-form__field popup-form__field_number">
+                                                    <label for="user-number-phone" class="popup-form__label">Phone</label>
+                                                    <input type="number" id="user-number-phone" class="popup-form__input" placeholder="(000) 000-0000">
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                        <button class="quiz__button-next button-dark" data-quiz="question-next">Next</button>
+                                    </div>
+                                    <div class="quiz-content__section quiz-content__section_finish">
+                                        <h2 class="quiz__question">
+                                            We have received your request and will respond soon. In the meantime, you can view the the listings nearby.
+                                        </h2>
+
+                                        <section class="main__filter filter">
+                                            <h2 class="filter__title title">Filter</h2>
+                                            <div class="filter-slider">
+                                                <div class="swiper-wrapper">
+                                                    <a href="catalog.html" class="swiper-slide filter-card">
+                                                        <div class="filter-card__preview">
+                                                            <img src="./img/filter/img1.webp" alt="">
+                                                        </div>
+                                                        <h3 class="filter-card__title" title="Summerlin">Summerlin</h3>
+                                                    </a>
+                                                    <a href="catalog.html" class="swiper-slide filter-card">
+                                                        <div class="filter-card__preview">
+                                                            <img src="./img/filter/img2.webp" alt="">
+                                                        </div>
+                                                        <h3 class="filter-card__title" title="Henderson">Henderson</h3>
+                                                    </a>
+                                                    <a href="catalog.html" class="swiper-slide filter-card">
+                                                        <div class="filter-card__preview">
+                                                            <img src="./img/filter/img3.webp" alt="">
+                                                        </div>
+                                                        <h3 class="filter-card__title" title="North Las Vegas">North Las Vegas</h3>
+                                                    </a>
+                                                    <a href="catalog.html" class="swiper-slide filter-card">
+                                                        <div class="filter-card__preview">
+                                                            <img src="./img/filter/img4.webp" alt="">
+                                                        </div>
+                                                        <h3 class="filter-card__title" title="High Rise Condos">High Rise Condos</h3>
+                                                    </a>
+                                                    <a href="catalog.html" class="swiper-slide filter-card">
+                                                        <div class="filter-card__preview">
+                                                            <img src="./img/filter/img5.webp" alt="">
+                                                        </div>
+                                                        <h3 class="filter-card__title" title="Luxury">Luxury</h3>
+                                                    </a>
+                                                    <a href="catalog.html" class="swiper-slide filter-card">
+                                                        <div class="filter-card__preview">
+                                                            <img src="./img/filter/img6.webp" alt="">
+                                                        </div>
+                                                        <h3 class="filter-card__title" title="$300k - $700k Las Vegas Homes">$300k - $700k Las Vegas Homes</h3>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </section>
+                            
+                                        <section class="main__featured featured">
+                                            <h2 class="featured__title title">Featured</h2>
+                                            <div class="featured-slider">
+                                                <div class="swiper-wrapper">
+                                                    <a href="product-page.html" class="swiper-slide featured-card">
+                                                        <div class="featured-card__preview">
+                                                            <img src="./img/featured/img.webp" alt="">
+                                                        </div>
+                                                        <div class="featured-card__body">
+                                                            <span class="featured-card__subtitle">Adress</span>
+                                                            <h3 class="featured-card__title" title="Mecaw House">Mecaw House</h3>
+                                                            <span class="featured-card__price">$10,000,000</span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="product-page.html" class="swiper-slide featured-card">
+                                                        <div class="featured-card__preview">
+                                                            <img src="./img/featured/img.webp" alt="">
+                                                        </div>
+                                                        <div class="featured-card__body">
+                                                            <span class="featured-card__subtitle">Adress</span>
+                                                            <h3 class="featured-card__title" title="Mecaw House">Mecaw House</h3>
+                                                            <span class="featured-card__price">$10,000,000</span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="product-page.html" class="swiper-slide featured-card">
+                                                        <div class="featured-card__preview">
+                                                            <img src="./img/featured/img.webp" alt="">
+                                                        </div>
+                                                        <div class="featured-card__body">
+                                                            <span class="featured-card__subtitle">Adress</span>
+                                                            <h3 class="featured-card__title" title="Mecaw House">Mecaw House</h3>
+                                                            <span class="featured-card__price">$10,000,000</span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="product-page.html" class="swiper-slide featured-card">
+                                                        <div class="featured-card__preview">
+                                                            <img src="./img/featured/img.webp" alt="">
+                                                        </div>
+                                                        <div class="featured-card__body">
+                                                            <span class="featured-card__subtitle">Adress</span>
+                                                            <h3 class="featured-card__title" title="Mecaw House">Mecaw House</h3>
+                                                            <span class="featured-card__price">$10,000,000</span>
+                                                        </div>
+                                                    </a>
+                        
+                                                    <a href="product-page.html" class="swiper-slide featured-card">
+                                                        <div class="featured-card__preview">
+                                                            <img src="./img/featured/img.webp" alt="">
+                                                        </div>
+                                                        <div class="featured-card__body">
+                                                            <span class="featured-card__subtitle">Adress</span>
+                                                            <h3 class="featured-card__title" title="Mecaw House">Mecaw House</h3>
+                                                            <span class="featured-card__price">$10,000,000</span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="product-page.html" class="swiper-slide featured-card">
+                                                        <div class="featured-card__preview">
+                                                            <img src="./img/featured/img.webp" alt="">
+                                                        </div>
+                                                        <div class="featured-card__body">
+                                                            <span class="featured-card__subtitle">Adress</span>
+                                                            <h3 class="featured-card__title" title="Mecaw House">Mecaw House</h3>
+                                                            <span class="featured-card__price">$10,000,000</span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="product-page.html" class="swiper-slide featured-card">
+                                                        <div class="featured-card__preview">
+                                                            <img src="./img/featured/img.webp" alt="">
+                                                        </div>
+                                                        <div class="featured-card__body">
+                                                            <span class="featured-card__subtitle">Adress</span>
+                                                            <h3 class="featured-card__title" title="Mecaw House">Mecaw House</h3>
+                                                            <span class="featured-card__price">$10,000,000</span>
+                                                        </div>
+                                                    </a>
+                                                    <a href="product-page.html" class="swiper-slide featured-card">
+                                                        <div class="featured-card__preview">
+                                                            <img src="./img/featured/img.webp" alt="">
+                                                        </div>
+                                                        <div class="featured-card__body">
+                                                            <span class="featured-card__subtitle">Adress</span>
+                                                            <h3 class="featured-card__title" title="Mecaw House">Mecaw House</h3>
+                                                            <span class="featured-card__price">$10,000,000</span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/quiz.js"></script>
+    <script src="./js/range.js"></script>
+</body>
+</html>
